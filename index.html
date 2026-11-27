@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Oguzhan Kaynak</title>
-  <meta name="description" content="Oguzhan Kaynak, embedded software engineer: atlOS, wireforge, gridlane, VxWorks tools and other projects.">
+  <meta name="description" content="Oguzhan Kaynak, embedded software engineer: atlOS, wireforge, gridlane, qemu-ntb, VxWorks tools and other projects.">
   <link rel="stylesheet" href="style.css">
   <base target="_blank">
 </head>
@@ -64,6 +64,28 @@
         <p class="links">
           <a href="https://github.com/oguzhankynk/gridlane/wiki">Wiki</a>
           <a href="https://github.com/oguzhankynk/gridlane">Source</a>
+        </p>
+      </article>
+
+      <article>
+        <h3><a href="https://oguzhankynk.github.io/qemu-ntb/">qemu-ntb</a></h3>
+        <p>A virtual PCIe NTB (non-transparent bridge) for QEMU. Two VMs get
+          what two hosts get from an NTB adapter: memory windows into each
+          other's RAM, doorbells, scratchpads and a DMA engine, and the
+          unmodified Linux NTB stack (<code>ntb_transport</code>,
+          <code>ntb_netdev</code>, <code>ntb_perf</code>, the kernel
+          selftest) runs on it. Memory windows can map the peer's RAM
+          directly under KVM. Testing it turned up two Linux
+          <code>ntb_tool</code> bugs and a QEMU migration bug, with fixes
+          sent upstream.
+          <a href="https://oguzhankynk.github.io/ntb-lab/">ntb-lab</a>
+          builds on it: a kernel module that gives ordinary programs shared
+          memory, doorbells and DMA over NTB, with a two-VM tutorial.</p>
+        <p class="links">
+          <a href="https://oguzhankynk.github.io/qemu-ntb/">Docs</a>
+          <a href="https://github.com/oguzhankynk/qemu-ntb">Source</a>
+          <a href="https://oguzhankynk.github.io/ntb-lab/">ntb-lab tutorial</a>
+          <a href="https://github.com/oguzhankynk/ntb-lab">ntb-lab source</a>
         </p>
       </article>
 
